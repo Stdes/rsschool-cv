@@ -13,7 +13,7 @@ However after I finished university I had rather found work of programmer than e
 
 Few years I worked as system administrator of commercial electricity metering. That work was not much about coding more about servers, communication and electric equipment perhaps some shell scripts.
 
-Next couple of years I spent solo-working as freelancer working on order to develop an ERP-program that allowed small  international company switch from excel's tables to automatization of warehouses accounting,  financial accounting and trading. I used MS Access, VBA and SQL developing this program (code example below).
+Next couple of years I spent solo-working as freelancer on order to develop an ERP-program that allowed small  international company switch from excel's tables to automatization of warehouses accounting,  financial accounting and trading. I used MS Access, VBA and SQL developing this program (code example below).
 
 Therefore... to summarize all of my programming experience is about desktop applications. So I would like to study web-developing as frontend as backend.
 
