@@ -26,6 +26,10 @@ Therefore... to summarize all of my programming experience is about desktop appl
 * MS Visual Basic
 * SQL
 
+# Languages
+* Russian (natived)
+* English (B2 upper-intermediate)
+
  # Education
 * Far Eastern State Transport University, Khabarovsk
     * Faculty of automation, telemechanics and communication, specialization of microprocessor's systems.
