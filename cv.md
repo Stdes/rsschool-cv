@@ -27,7 +27,7 @@ Therefore... to summarize all of my programming experience is about desktop appl
 * SQL
 
 # Languages
-* Russian (natived)
+* Russian (native)
 * English (B2 upper-intermediate)
 
  # Education
