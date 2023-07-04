@@ -3,18 +3,14 @@
     src: url(/assets/fonts/OpenSans-Regular.ttf);
 }
 
-*{
-    box-sizing: border-box;
-}
-
 header {font-family: "Open Sans"; color: black ; font-size: xx-large; }
 
-left-div {
+.left-div {
     float: left;
-    padding : 1%;
+    width: 50%;
 }
 
-middle-div {
-    float: left;
-    padding: 1%;
+.right-div {
+    float: right;
+    width: 50%;
 }
