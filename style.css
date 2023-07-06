@@ -1,18 +1,20 @@
 @font-face {
-    font-family: 'Open Sans';
-    src: url(/assets/fonts/OpenSans-Regular.ttf);
+    font-family: 'Ysabeau SC';
+    src: url(/assets/fonts/YsabeauSC-Regular.ttf);
 }
 
 h1 {
+    font-family: 'Ysabeau SC', YsabeauSC-Regular, monospace;
     text-transform: uppercase;
 }
 
 h2 {
     text-transform: uppercase;
+    font-family: 'YsabeauSC-Regular', Courier, monospace;
 }
 
 p {
-    
+    font-family: 'YsabeauSC-Regular', Courier, monospace;
     font-size: 18px;
     color: #E5E5E5;
 }
@@ -24,15 +26,19 @@ p {
 a, u {
     /*уберем подчеркивание ссылок*/
     text-decoration: none;
-    color: #3A668B;
+    color:cadetblue;
 }
 
 li {
     color: #E5E5E5;
+    font-size: 18px;
 }
 
 li span {
-    color: #E5E5E5;;
+    font-family: 'YsabeauSC-Regular', Courier, monospace;
+    color: #E5E5E5;
+    line-height: 1.5em;
+    font-size: 18px;
 }
 
 header {
@@ -40,6 +46,7 @@ header {
 }
 
 footer {
+    font-family: 'YsabeauSC-Regular', Courier, monospace;
     color: #E5E5E5;
     text-align:right;
 }
@@ -92,6 +99,7 @@ body {
     align-items: center; /*выровняем по высоте по центру*/
     list-style: none; /*убираем маркеры в меню*/
     font-size: larger;
+    text-transform: uppercase;
 }
 
 .nav-link {
@@ -122,11 +130,6 @@ html {
     padding-left: 20px;    
     padding-right: 20px;    
     text-align: center;
-}
-
-
-.code-section {
-    
 }
 
 /*Укажем, что при уменьшении ширины экрана до 768px, секция будет занимать всю ширину:*/
