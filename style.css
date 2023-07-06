@@ -3,28 +3,76 @@
     src: url(/assets/fonts/OpenSans-Regular.ttf);
 }
 
-header {font-family: "Open Sans"; color: black ; font-size: xx-large; }
+header {
+    font-family: "Open Sans"; color: black ; font-size: xx-large; 
+    border: 6px solid orange;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  /*Благодаря свойству box-sizing: border-box; границы и внутренние отступы будут учитываться в значениях,
+   которые вы указываете в ширине и высоте элемента. Это упрощает работу с размерами, позволяет указывать их
+   более логично*/
 
 body {
     text-align: center;
+    border: 6px solid blue;
+    min-height: 100vh; /*100 viewport height (растянуть по высоте на весь экран)*/
+    /*уберем полосу прокрутки*/
+    margin: 0; /*внешний отступ 0*/
+    padding: 0; /*внутреннее поле 0*/
+    /*прижмем footer к низу страницы*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*
+    Обратите внимание, что свойство justify-content определяет выравнивание элементов по главной оси.
+    По умолчанию у flexbox главная ось горизонтальная и свойство justify-content выравнивает элементы 
+    по горизонтали. Но указав свойство flex-direction: column;, мы тем самым переопределили направление
+     главной оси. Поэтому в данном случае justify-content определяет выравнивание по вертикали.
+    Свойство justify-content: space-between; указывает, что все элементы размещаются на максимальном
+    расстоянии друг от друга, крайние прижаты к границам родителя. Цель достигнута, footer прижат к низу страницы.
+    */
 }
 
-.left-div {
- float: left;
- width: 50%;
+main {
+    border: 6px solid red;
 }
 
-.right-div {
- float: right;
- width: 50%;
+footer {
+    border: 6px solid green;
 }
 
-.cv-header {
- font-size: 40px;
- vertical-align: top;   
+.container {
+    /*элемент с классом container, который ограничивает ширину контента и центрирует его на странице
+    по горизонтали.*/
+    max-width: 1440px;
+    margin: 0 auto;
+    /*Как любой блочный элемент, контейнер стремится занять всю ширину окна браузера. 
+    Так и происходит до тех пор, пока ширина окна не превышает 1440px, если окно браузера больше,
+    свойство max-width ограничивает ширину контейнера.*/
 }
 
-.cv-desc {
- font-size: 14px;
- vertical-align: top;  
+.nav-list {
+    display: flex; /*разместим элементы навигации в одну строку*/
+    justify-content: flex-end; /*сдвинем их вправо*/
+    align-items: center; /*выровняем по высоте по центру*/
+    list-style: none; /*убираем маркеры в меню*/
 }
+
+.nav-link {
+    /*добавим отступы между элементами меню*/
+    padding: 0 20px;
+    line-height: 50px; /*минимальная высота строки*/
+}
+
+a, u {
+    /*уберем подчеркивание ссылок*/
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth; /*плавная прокрутка*/
+}
+
