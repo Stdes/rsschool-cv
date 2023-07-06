@@ -5,12 +5,26 @@
 
 header {font-family: "Open Sans"; color: black ; font-size: xx-large; }
 
+body {
+    text-align: center;
+}
+
 .left-div {
-    float: left;
-    width: 50%;
+ float: left;
+ width: 50%;
 }
 
 .right-div {
-    float: right;
-    width: 50%;
+ float: right;
+ width: 50%;
+}
+
+.cv-header {
+ font-size: 40px;
+ vertical-align: top;   
+}
+
+.cv-desc {
+ font-size: 14px;
+ vertical-align: top;  
 }
