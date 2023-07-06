@@ -3,8 +3,45 @@
     src: url(/assets/fonts/OpenSans-Regular.ttf);
 }
 
+h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+p {
+    
+    font-size: 18px;
+    color: #E5E5E5;
+}
+
+.section-title {
+    color: #E5E5E5;
+}
+
+a, u {
+    /*уберем подчеркивание ссылок*/
+    text-decoration: none;
+    color: #3A668B;
+}
+
+li {
+    color: #E5E5E5;
+}
+
+li span {
+    color: #E5E5E5;;
+}
+
 header {
-    font-family: "Open Sans"; color: black ; font-size: xx-large; 
+    font-family: "Open Sans"; 
+}
+
+footer {
+    color: #E5E5E5;
+    text-align:right;
 }
 
 * {
@@ -15,8 +52,8 @@ header {
    более логично*/
 
 body {
-    text-align: center;
-    border: 6px solid blue;
+    background-color: #171717;
+    text-align: left;
     min-height: 100vh; /*100 viewport height (растянуть по высоте на весь экран)*/
     /*уберем полосу прокрутки*/
     margin: 0; /*внешний отступ 0*/
@@ -35,6 +72,10 @@ body {
     */
 }
 
+.logo-highlight {
+    background-color:#444444;
+}
+
 .container {
     /*элемент с классом container, который ограничивает ширину контента и центрирует его на странице
     по горизонтали.*/
@@ -47,21 +88,16 @@ body {
 
 .nav-list {
     display: flex; /*разместим элементы навигации в одну строку*/
-    justify-content: flex-end; /*сдвинем их вправо*/
+    justify-content: center; /*разместим по центру*/
     align-items: center; /*выровняем по высоте по центру*/
     list-style: none; /*убираем маркеры в меню*/
+    font-size: larger;
 }
 
 .nav-link {
     /*добавим отступы между элементами меню*/
     padding: 0 20px;
     line-height: 50px; /*минимальная высота строки*/
-}
-
-a, u {
-    /*уберем подчеркивание ссылок*/
-    text-decoration: none;
-    color: blue;
 }
 
 html {
@@ -75,6 +111,22 @@ html {
 
 .section {
     width: 50%;
+    border: 1px solid #444444;
+    padding-left: 20px;    
+    padding-right: 20px;    
+}
+
+.section-center {
+    width: 50%;
+    border: 1px solid #444444;
+    padding-left: 20px;    
+    padding-right: 20px;    
+    text-align: center;
+}
+
+
+.code-section {
+    
 }
 
 /*Укажем, что при уменьшении ширины экрана до 768px, секция будет занимать всю ширину:*/
