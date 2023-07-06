@@ -5,7 +5,6 @@
 
 header {
     font-family: "Open Sans"; color: black ; font-size: xx-large; 
-    border: 6px solid orange;
 }
 
 * {
@@ -36,14 +35,6 @@ body {
     */
 }
 
-main {
-    border: 6px solid red;
-}
-
-footer {
-    border: 6px solid green;
-}
-
 .container {
     /*элемент с классом container, который ограничивает ширину контента и центрирует его на странице
     по горизонтали.*/
@@ -70,9 +61,25 @@ footer {
 a, u {
     /*уберем подчеркивание ссылок*/
     text-decoration: none;
+    color: blue;
 }
 
 html {
     scroll-behavior: smooth; /*плавная прокрутка*/
 }
 
+.main-container {
+    display: flex;/*разместим секции по горизонтали*/
+    flex-wrap: wrap;/*секции, которые не помещаются по ширине контейнера переносятся на новую строку*/
+}
+
+.section {
+    width: 50%;
+}
+
+/*Укажем, что при уменьшении ширины экрана до 768px, секция будет занимать всю ширину:*/
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
