@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assets/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+    <main>
+        <div class="container main-container">
+            
+            <div class="section-center">
+                    <img src='assets/img/avatar_me.jpg' alt="avatar-me">
+            </div>
+
+            <section class="section" id="profile">
+                <h1 class="section-title">Stanislav Stepanov</h1>
+                <h2 class="section-title">Junior full-stack developer</h2>
+            </section>
+
+            <section class="section" id="contacts">
+                <h2 class="section-title">Contacts</h2>
+                <p>Khabarovsk, Russia</p>
+                <p>E-mail: <a href="mailto:stanislav.msb@yandex.ru">stanislav.msb@yandex.ru </a></p>
+                <p>Github: <a href="https://github.com/Stdes">Stdes</a></p>
+                <p>Telegram: <a href="https://t.me/startrekot">@startrekot</a></p>
+            </section>
+
+            <section class="section" id="summary">
+                <h2 class="section-title">Summary</h2>
+                <p>Studying programming as hobby led me to the real job applications.
+                Therefore I have some experience developing ERP and SCADA desktop applications.
+                I want use the opportunity so kindly provided by <a href="https://rs.school/js/">RS school</a>
+                to study web-tech as frontend as backend.
+                I'm sure it will broaden my horizons and maybe allow to find more applications.</p>
+            </section>
+
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul>
+                    <li><span>Delphi</span></li>
+                    <li><span>MS SQL</span></li>
+                    <li><span>Visual Basic</span></li>
+                    <li><span>SQL</span></li>
+                    <li><span>Git</span></li>
+                </ul>
+            </section>
+
+            <section class="section" id="code">
+                <h2 class="section-title">Code</h2>
+                <p>
+                    <code class="code-section">DoCmd.RunSQL "UPDATE RegisterStorage SET RegisterStorageStatusID = 1, " & _
+                    "ClearanceStatusID = 2, ClearanceExpired = Null " & _
+                    "WHERE RegisterStorageID=" & !RegisterStorageID
+                    </code>
+                </p>
+            </section>
+
+            <section class="section" id="projects">
+                <h2 class="section-title">Projects</h2>
+                <ul>
+                    <li><span><a href="https://github.com/Stdes/rsschool-cv/blob/gh-pages/cv.md">CV#1. Markdown & Git</a></span></li>
+                    <li><span><a href="#projects">CV#2. HTML, CSS & Git Basics</a></span></li>
+                </ul>
+            </section>
+
+            <section class="section" id="education">
+                <h2 class="section-title">Education</h2>
+                <p>Far Eastern State Transport University, Khabarovsk</p>
+                <p>English: B2 upper-intermediate</p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy;
+            <time datetime="2023">2023</time>
+            <a href="https://github.com/Stdes">Stdes</a>
+            <a href="https://rs.school/js/"><img class="logo-highlight" src="assets/img/rs_school_js.svg" alt="RSschool-logo"  height="40"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
